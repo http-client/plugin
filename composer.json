@@ -1,0 +1,27 @@
+{
+    "name": "http-client/plugin",
+    "type": "composer-plugin",
+    "description": "Composer plugin for Http Client",
+    "keywords": [],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mingyoung",
+            "email": "mingyoungcheung@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "composer-plugin-api": "^1.1"
+    },
+    "extra": {
+        "class": "HttpClient\\Plugin\\Plugin"
+    },
+    "autoload": {
+        "psr-4": {
+            "HttpClient\\Plugin\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
