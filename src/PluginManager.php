@@ -12,9 +12,9 @@ class PluginManager
         $this->manifestPath = __DIR__.'/../manifest.php';
     }
 
-    public function provides()
+    public function definitions()
     {
-        return $this->config('provides');
+        return $this->config('definitions');
     }
 
     public function extensions()
